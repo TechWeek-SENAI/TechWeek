@@ -30,12 +30,7 @@ export const About = () => {
         <div className="text-center space-y-4 mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold">
             What is{" "}
-            <span 
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage: 'var(--gradient-accent)',
-              }}
-            >
+            <span className="text-primary">
               Tech Week
             </span>
             ?
@@ -49,11 +44,11 @@ export const About = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group p-6 rounded-2xl border border-border bg-card hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] animate-fade-in"
+              className="group p-6 rounded-lg border-2 border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <feature.icon className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <feature.icon className="w-6 h-6 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-muted-foreground">{feature.description}</p>

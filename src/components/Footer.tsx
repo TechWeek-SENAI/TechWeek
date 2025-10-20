@@ -7,12 +7,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 
-              className="text-2xl font-bold bg-clip-text text-transparent"
-              style={{
-                backgroundImage: 'var(--gradient-accent)',
-              }}
-            >
+            <h3 className="text-2xl font-bold text-primary">
               Tech Week 2025
             </h3>
             <p className="text-sm text-muted-foreground">

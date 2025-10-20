@@ -68,7 +68,7 @@ export const Schedule = () => {
           {scheduleData.map((day, index) => (
             <Card
               key={day.date}
-              className="p-6 border-border hover:border-primary/50 transition-all duration-300 bg-card/50 backdrop-blur-sm animate-fade-in"
+              className="p-6 border-2 border-border hover:border-primary transition-all duration-300 bg-card animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">

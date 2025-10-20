@@ -22,7 +22,7 @@ export const Sponsors = () => {
           {sponsors.map((sponsor, index) => (
             <div
               key={sponsor.name}
-              className="group p-8 rounded-2xl border border-border bg-card hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] animate-fade-in flex flex-col items-center justify-center gap-4"
+              className="group p-8 rounded-lg border-2 border-border bg-card hover:border-primary transition-all duration-300 hover:shadow-lg animate-fade-in flex flex-col items-center justify-center gap-4"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-full aspect-video flex items-center justify-center text-3xl font-bold text-muted-foreground group-hover:text-primary transition-colors">
